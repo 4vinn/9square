@@ -27,5 +27,6 @@ Here are some of the resources I used while working on this project:
 - https://www.youtube.com/watch?v=iV6poGLPTkk
 - https://www.youtube.com/watch?v=cOC-ad0BsY0
 - https://www.cs.mcgill.ca/~aassaf9/python/sudoku.txt (sudoku solver)
+- https://pyimagesearch.com/2020/08/10/opencv-sudoku-solver-and-ocr/ (model training for digit recognition)
 - https://medium.com/mlearning-ai/augmented-reality-sudoku-solver-part-ii-cdfc035a415c (processing)
 - https://medium.com/analytics-vidhya/opencv-perspective-transformation-9edffefb2143 (perspective transformation)
