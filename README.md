@@ -1,20 +1,19 @@
-# Sudoku Solver
+# Sudoku Solver <img src="https://img.shields.io/badge/OpenCV-4.8-orange?logo=opencv&logoColor=green" /> <img src ="https://img.shields.io/badge/TensorFlow-2.15-orange?logo=tensorflow"> <img src="https://img.shields.io/badge/Python-3.10.9-orange?logo=python"> <img src="https://img.shields.io/badge/sklearn-1.2.2-orange?logo=scikitlearn"> <img src="https://img.shields.io/badge/Numpy-1.24.1-orange?logo=numpy&logoColor=blue">
 
 ![Sudoku](images/solved.png "Sudoku")
 
 ## Description
 
-An augmented reality Sudoku solver made with OpenCV, Python, and TensorFlow.
+An augmented reality 9x9 Sudoku solver made with OpenCV, Python, and TensorFlow/Keras.
 
-> Sudoku is a logic-based, combinatorial number-placement puzzle. In classic Sudoku, the objective is to fill a 9 × 9 grid with digits so that each column, each row, and each of the nine 3 × 3 subgrids that compose the grid contain all of the digits from 1 to 9.
 
-The main motivation behind this project was to create a fast, easy-to-use application to automatically solve sudoku problems.
+## Run locally
 
-## Running
+**Requirement:** *Python, Numpy, ,  OpenCV, Tensorflow (Keras) and Scikit-learn.*
 
-This project requires tensorflow, scikit-learn, and opencv.
+> Note: No need to train model for digit recognition. As `digitsOCR` contains the trained neural network model for recognizing digits (0-9).
 
-Note: There is no need to build the project beforehand, as the digit recognition model is saved and does not need to be retrained.
+Just run
 
 ```
 python3 app.py
@@ -24,8 +23,9 @@ python3 app.py
 
 Here are some of the resources I used while working on this project:
 
-- https://www.cs.mcgill.ca/~aassaf9/python/sudoku.txt
-- https://medium.com/mlearning-ai/augmented-reality-sudoku-solver-part-ii-cdfc035a415c
-- https://medium.com/analytics-vidhya/opencv-perspective-transformation-9edffefb2143
 - https://www.youtube.com/watch?v=QR66rMS_ZfA
-- https://pyimagesearch.com/2020/08/10/opencv-sudoku-solver-and-ocr/
+- https://www.youtube.com/watch?v=iV6poGLPTkk
+- https://www.youtube.com/watch?v=cOC-ad0BsY0
+- https://www.cs.mcgill.ca/~aassaf9/python/sudoku.txt (sudoku solver)
+- https://medium.com/mlearning-ai/augmented-reality-sudoku-solver-part-ii-cdfc035a415c (processing)
+- https://medium.com/analytics-vidhya/opencv-perspective-transformation-9edffefb2143 (perspective transformation)
