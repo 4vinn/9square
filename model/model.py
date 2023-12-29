@@ -101,5 +101,5 @@ r = model.fit(
     callbacks=[lrcallback],
 )
 
-model.save("digit_ocr.h5")
+model.save("digitOCR.h5")
 
