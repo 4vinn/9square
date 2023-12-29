@@ -1,6 +1,6 @@
 # Sudoku Solver
 
-![Sudoku](docs/images/solved.png "Sudoku")
+![Sudoku](images/solved.png "Sudoku")
 
 ## Description
 
