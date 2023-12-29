@@ -233,7 +233,7 @@ def main():
         except:
             pass
 
-        cv2.imshow("Sudoku Solver", frame)
+        cv2.imshow("9Square", frame)
 
         if cv2.waitKey(1) & 0xFF == ord("q"):
             break
