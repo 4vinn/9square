@@ -8,18 +8,25 @@ model = tf.keras.models.load_model("model/digit_ocr.h5")
 
 
 def preprocess(image):
+    # convert the image to gray scale
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+    # apply gaussian blur
     blur = cv2.GaussianBlur(gray, (5, 5), 0)
+    # apply gaussian threshold
     adapt_thresh_inv = cv2.adaptiveThreshold(
         blur, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY_INV, 7, 2
     )
+
     kernel = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (2, 2))
     opening = cv2.morphologyEx(adapt_thresh_inv, cv2.MORPH_OPEN, kernel)
     return opening
 
 
 def find_largest_contour(image):
+    # find all the contours
     contours, _ = cv2.findContours(image, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+
+    # check if the contour area is greater than 1000 pixel sq.
     max_area = 0
     largest_contour = None
 
